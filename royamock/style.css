@@ -1,0 +1,180 @@
+/* 
+author: @esra'aEid
+github:  @EsraaEid2
+email: esraa.eidd2@gmail.com
+date: 2024-09-23
+project: Roya Mockup
+*/
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css');
+
+:root {
+    --secondary-color: #CDC1FF;
+    --text-color: rgb(28, 43, 79);
+    --background-color: #f0f0f05b;
+    --highlight-color: #183379;
+}
+
+/* General Styles */
+body {
+    font-family: Almarai, Arial, sans-serif;
+    font-size: 1em;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+/* Header Section */
+.head {
+    padding-top: 20px;
+    color: var(--text-color);
+}
+
+.divLogoGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+/* Logo, Language, and Night Mode Section */
+.logoFlex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.small-img {
+    width: 40px;
+    height: 40px;
+}
+
+.smallest-img {
+    width: 16px;
+    height: 16px;
+}
+
+/* Navbar Styles */
+.navbar-nav .nav-item .nav-link {
+    color: inherit;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.3s ease;
+}
+
+.navbar-nav .nav-item .nav-link:hover,
+.navbar-nav .nav-item .nav-link.active {
+    border-bottom: 2px solid var(--highlight-color);
+    color: var(--highlight-color);
+}
+
+/* Main News Image Section */
+.big-picture {
+    width: 100%;
+    height: auto;
+}
+
+/* Text Overlay for Main News */
+/* Overlay Text on Image */
+.text-overlay {
+    background: rgba(0, 0, 0, 0.6);
+    /* Semi-transparent background */
+    color: white;
+    border-radius: 5px 5px 0 0;
+    /* Rounded top corners */
+    width: 100%;
+    /* Span the width of the image */
+    padding: 10px;
+}
+
+.text-overlay h4 {
+    margin: 0;
+    /* Remove default margin */
+    font-size: 1.25em;
+    /* Adjust font size for better readability */
+}
+
+.text-overlay p {
+    margin: 5px 0 0 0;
+    /* Margin adjustment for paragraph */
+    font-size: 0.9em;
+    /* Smaller font size for the timestamp */
+}
+
+/* News List Item Styles */
+.news-item {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.news-img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.news-title {
+    font-size: 1em;
+    font-weight: bold;
+    color: var(--text-color);
+}
+
+.news-time {
+    font-size: 0.85em;
+    color: gray;
+}
+
+/* General Button Styles */
+.custom-btn {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.custom-btn:hover {
+    background-color: var(--highlight-color);
+    color: white;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+
+    .small-img,
+    .smallest-img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .textOfImg {
+        transform: translateY(20%);
+        font-size: 0.9em;
+    }
+
+    .news-img {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+/*footer section*/
+
+.footer-container {
+    margin-top: 20rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15rem;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+}
+
+.img_google{
+    width: 200px;
+    height: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
